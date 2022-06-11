@@ -17,7 +17,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   output: {
-    path: path.resolve(__dirname, 'public', 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   plugins: [
@@ -28,7 +28,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.resolve(__dirname, 'public'),
+    static: path.resolve(__dirname, 'dist'),
     hot: true,
     port: 3000,
     allowedHosts: 'all',

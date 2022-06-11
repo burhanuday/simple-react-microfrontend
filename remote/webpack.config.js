@@ -16,14 +16,14 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'remote_bundle.js',
     publicPath: 'http://localhost:3001/',
     library: 'RemoteComponent',
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    static: path.resolve(__dirname, './dist'),
+    static: path.resolve(__dirname, 'dist'),
     hot: true,
     port: 3001,
     allowedHosts: 'all',
